@@ -1,0 +1,6 @@
+{"note":"Diagnostics 14 Oct: 60/314 Google runs had a tool-argument error (model called web_search with 'search_query'; harness raised error), 2 quota 429, 22 context-dependent pronoun questions. Clean set = tool ok + standalone: 232 questions (229 with hidden states).",
+ "accuracy_by_kind":{"tool_ok":0.468,"tool_arg_error":0.083,"pronoun_questions":0.091,"clean_standalone":0.504},
+ "time_sensitivity_test":{"current_latest":0.41,"fixed_year":0.37,"stable":0.41,"verdict":"not the cause"},
+ "gold_in_search_context":{"rate":0.47,"acc_if_present":0.74,"acc_if_absent":0.09},
+ "clean229":{"accuracy":{"no_tool":0.118,"force_google":0.502},"utility_kappa":0.97,"kappa_ci":[0.941,0.994],"agreement_reference":0.992,"LNE":0.904,
+   "q2":{"pre":0.598,"post":0.746,"diff":0.148,"ci":[0.056,0.239],"significant":true,"gap_closure_vs_reference":0.375}}}

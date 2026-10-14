@@ -1,0 +1,95 @@
+"""Data-quality diagnostics and the clean-set filter used in the report.
+
+Flags, per always-search run:
+  tool_arg_error  - the model called web_search with a wrong argument name and
+                    the harness returned an error string instead of results
+  quota_429       - the search API rejected the call (rate/quota limit)
+  context_dependent - short questions with an unresolved pronoun/reference
+                    ("Where is his hometown?") that cannot be answered standalone
+Also reports whether the gold answer appears in the retrieved context.
+
+  python src/diagnostics.py --runs runs --judgments data/judgments.jsonl \
+      --gt ../ToCall_or_NotToCall/data/BFCL.csv --hidden data/hidden.npz --out data/clean
+Writes clean judgments + hidden states for:  python src/analyze.py --judgments data/clean/judgments.jsonl --hidden data/clean/hidden.npz
+"""
+from __future__ import annotations
+import argparse, json, re
+from pathlib import Path
+import numpy as np
+import pandas as pd
+from io_utils import load_jsonl, load_ground_truth, question_of
+
+PRONOUN = re.compile(r"\b(?:his|her|he|she|they|their|its|the team|the album|the club|"
+                     r"the company|the school|the city|this|that)\b", re.I)
+
+
+def flag(row: dict) -> str:
+    text = str(row.get("final_prompt", "")) + str(row.get("response", ""))
+    if "unexpected keyword" in text or "not expecting" in text or "_execute_web_search" in text:
+        return "tool_arg_error"
+    if "429" in text:
+        return "quota_429"
+    return "ok"
+
+
+def is_context_dependent(q: str) -> bool:
+    return bool(PRONOUN.search(q)) and len(q.split()) < 9
+
+
+def _norm(s) -> str:
+    return re.sub(r"[^a-z0-9 ]", " ", str(s).lower())
+
+
+def gold_in_context(row: dict, gold) -> bool:
+    toks = [t for t in _norm(gold).split() if len(t) > 2]
+    ctx = _norm(row.get("final_prompt", ""))
+    return bool(toks) and all(t in ctx for t in toks)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--runs", default="runs")
+    ap.add_argument("--judgments", default="data/judgments.jsonl")
+    ap.add_argument("--gt", required=True)
+    ap.add_argument("--hidden", default="data/hidden.npz")
+    ap.add_argument("--engine", default="google")
+    ap.add_argument("--out", default="data/clean")
+    a = ap.parse_args()
+
+    gt = load_ground_truth(a.gt)
+    rows = load_jsonl(Path(a.runs) / f"force_{a.engine}.jsonl")
+    j = pd.DataFrame(load_jsonl(a.judgments))
+    acc = j[(j.condition == f"force_{a.engine}") & (j.rep == 0)].groupby("question").score.mean()
+
+    d = pd.DataFrame([{"question": question_of(r), "flag": flag(r),
+                       "context_dependent": is_context_dependent(question_of(r)),
+                       "gold_in_context": gold_in_context(r, gt.get(question_of(r))),
+                       "correct": acc.get(question_of(r))} for r in rows])
+    report = {
+        "accuracy_by_flag": d.groupby("flag").correct.agg(["mean", "count"]).round(3).to_dict("index"),
+        "context_dependent": d.groupby("context_dependent").correct.agg(["mean", "count"]).round(3).to_dict("index"),
+        "gold_in_context_rate": round(float(d.gold_in_context.mean()), 3),
+        "accuracy_by_gold_in_context": d.groupby("gold_in_context").correct.agg(["mean", "count"]).round(3).to_dict("index"),
+    }
+    drop = set(d.loc[(d.flag != "ok") | d.context_dependent, "question"])
+    clean = d[~d.question.isin(drop)]
+    report["clean_n"] = int(len(clean))
+    report["clean_accuracy"] = round(float(clean.correct.mean()), 3)
+
+    out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
+    with open(out / "judgments.jsonl", "w") as f:
+        for r in load_jsonl(a.judgments):
+            if r["question"] not in drop:
+                f.write(json.dumps(r) + "\n")
+    if Path(a.hidden).exists():
+        H = dict(np.load(a.hidden, allow_pickle=True))
+        keep = np.array([q not in drop for q in H["questions"]])
+        np.savez(out / "hidden.npz", **{k: (v[keep] if len(v) == len(keep) else v) for k, v in H.items()})
+        report["clean_with_hidden"] = int(keep.sum())
+    (out / "excluded_questions.json").write_text(json.dumps(sorted(drop), indent=1))
+    (out / "diagnostics.json").write_text(json.dumps(report, indent=2, default=str))
+    print(json.dumps(report, indent=2, default=str))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,8 @@
+{"note":"Full run 2026-10-14. SerpAPI free quota (250/mo) ran out mid-run: 114/314 Google searches returned HTTP 429. Analysis restricted to 194 questions with successful search (non-random subset: failures depend on run order).",
+ "all_314_contaminated":{"no_tool":0.117,"force_google":0.351,"utility_kappa":0.967,"q2_pre":0.632,"q2_post":0.816},
+ "valid194":{"determinism":"20/20","accuracy":{"no_tool":0.113,"force_google":0.515},
+  "need":{"positive_rate":0.883,"flip_rate":0.010,"kappa":0.967,"ceiling_auroc":0.985},
+  "utility":{"positive_rate":0.418,"flip_rate":0.010,"flip_ci":[0.0,0.026],"kappa":0.986,"kappa_ci":[0.964,1.0],"ceiling_auroc":0.996},
+  "LNE_auroc":0.938,
+  "LUE_pre_auroc":0.597,"LUE_post_auroc":0.735,"diff":0.138,"diff_ci":[0.045,0.232],"gap_closure":0.345,
+  "budgets":{"0.2":{"pre":0.093,"post":0.117,"LNE":0.096,"oracle":0.201},"0.4":{"pre":0.216,"post":0.241,"LNE":0.174,"oracle":0.402},"0.8":{"pre":0.345,"post":0.380,"LNE":0.349,"oracle":0.418}}}}
