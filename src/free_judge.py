@@ -70,3 +70,16 @@ def _parse(text: str | None) -> float:
     except (json.JSONDecodeError, AttributeError):
         return 0.0
     return 1.0 if verdict.get("is_correct") is True else 0.0
+
+
+def parse_ok(text: str | None) -> bool:
+    """True when the judge output contains a JSON object with a boolean
+    is_correct. False means _parse() fell back to 0.0 (scored as wrong)."""
+    if not text:
+        return False
+    m = re.search(r"\{.*\}", text, re.S)
+    try:
+        verdict = json.loads(m.group(0) if m else text)
+    except (json.JSONDecodeError, AttributeError):
+        return False
+    return isinstance(verdict, dict) and isinstance(verdict.get("is_correct"), bool)

@@ -1,0 +1,54 @@
+{
+  "analysis": "correctness_stratified_decomposition",
+  "hidden": "data/hidden.npz",
+  "n": 308,
+  "n_dropped_missing_labels": 0,
+  "positive_rate": {
+    "need": 0.8831,
+    "correct": 0.3961,
+    "utility": 0.3182
+  },
+  "utility_equals_correct_times_need": true,
+  "utility_equals_correctness_frac": 0.9221,
+  "auroc_PRE_to_need": 0.9142,
+  "auroc_PRE_to_correct": 0.6389,
+  "auroc_PRE_to_utility": 0.6815,
+  "auroc_POST_to_need": 0.764,
+  "auroc_POST_to_correct": 0.8672,
+  "auroc_POST_to_utility": 0.8235,
+  "utility_gain_all": {
+    "auc_a": 0.6815,
+    "auc_b": 0.8235,
+    "diff": 0.142,
+    "ci_low": 0.0713,
+    "ci_high": 0.2147,
+    "significant": true
+  },
+  "need1": {
+    "n": 272,
+    "utility_positive_rate": 0.3603,
+    "PRE_vs_POST_utility": {
+      "auc_a": 0.6841,
+      "auc_b": 0.881,
+      "diff": 0.1969,
+      "ci_low": 0.131,
+      "ci_high": 0.2626,
+      "significant": true
+    }
+  },
+  "need0": {
+    "n": 36,
+    "utility_positives": 0,
+    "note": "utility is 0 by definition when the no-tool answer is already correct"
+  },
+  "auroc_product_PREneed_x_POSTcorrect_to_utility": 0.8382,
+  "POSTutility_minus_product": {
+    "auc_a": 0.8382,
+    "auc_b": 0.8235,
+    "diff": -0.0147,
+    "ci_low": -0.0562,
+    "ci_high": 0.0265,
+    "significant": false
+  },
+  "how_to_read": "If POST's gain over PRE survives inside need=1 and POST->utility clearly beats the product baseline, the post-search state carries utility signal beyond need+correctness. If the product matches POST->utility, the +0.15 is need probing plus correctness probing."
+}

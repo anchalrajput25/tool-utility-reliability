@@ -1,0 +1,1059 @@
+{
+ "n_retried_list": 114,
+ "broad_filter_on_before_reproduces_list": true,
+ "broad_filter_count_on_before": 114,
+ "retried_missing_from_before": [],
+ "retried_missing_from_after": [],
+ "before_structured": {
+  "quota_429": 46,
+  "ok": 2,
+  "tool_arg_error": 60,
+  "other_tool_error": 6
+ },
+ "after_structured": {
+  "ok": 46,
+  "tool_arg_error": 60,
+  "other_tool_error": 8
+ },
+ "transitions_structured": {
+  "quota_429 -> ok": 40,
+  "ok -> ok": 2,
+  "tool_arg_error -> tool_arg_error": 60,
+  "other_tool_error -> other_tool_error": 2,
+  "quota_429 -> other_tool_error": 6,
+  "other_tool_error -> ok": 4
+ },
+ "counted_fixed_by_original_check": 112,
+ "actually_ok_after": 46,
+ "true_quota_before": 46,
+ "true_quota_fixed": 40,
+ "arg_error_before_and_after": 60,
+ "per_question": [
+  {
+   "question": "How many children does Joan Laporta have?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "How many children does Somers currently have?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "quota_429",
+   "after_has_429": true,
+   "row_replaced": true
+  },
+  {
+   "question": "How many days of driving in 2024 was banned for Billy Monger?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "How many grand slams does Murray have?",
+   "before_structured": "ok",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "In what city was the record of the most words on a postage stamp set in 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is China's most populated city in 2024?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is his nationality?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is team that holds the highest number of consecutive women's football national league titles ever achieved, according to the Guinness World Records",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the artist whose track reached one billion Spotify streams fastest in 2024?",
+   "before_structured": "other_tool_error",
+   "after_structured": "other_tool_error",
+   "before_legacy": "ok",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the city where the largest display of origami dolphins was held, according to the Guinness World Records in 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the city where the largest robot championship recognized by the Guinness World Records in 2024 was held?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the city where the largest whistling archery gathering recognized by the Guinness World Records in 2024 was held?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the city where the record for the most consecutive female wheelchair singles titles as recognized by Guinness World Records in 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the city where the record of the most words on a postage stamp was set in 2024",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the country that played the most matches in UEFA European Football Championships",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the country that recorded five Olympic womens soccer gold medals according to the Guinness World Records in 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the country where the maximum number of games is live streamed for a single sports championship in 2024?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the country where the record for the most books with different title names but the same author is set, according to the Guinness World Records in 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the first national park established in Belgium?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the football team based in Rennes?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the height of Andr\u00e9 Villas-Boas?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the largest university in the US in 2024 by land area in square miles?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the most expensive car in 2024?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the nationality of Ren\u00e9 Magritte",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the official release date of call of duty black ops 6?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the region where Yakut (Sakha) language is primarily spoken",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the team that achieved the most wins in the Major League Soccer Cup, according to Guinness World Records?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What is the world's fastest supercomputing system?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What professional basketball league governs most levels of basketball in USA",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What team developed the game that won Game of the Year at the 2024 Game Awards?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What was the first book of stories published by Jayne Anne Phillips?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What year was the school of fine art founded for University of College London?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What's his current team?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What's the country that has earned the most World Womens Curling Championship titles, according to the 2024 Guinness World Records?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What's the country where the largest building in the shape of a chicken is located, according to the 2024 Guinness World Records",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What's the position of Caps?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "What's the team that holds the top spot for the most NBA Championship titles according to Guinness World Records in 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "When is Cartoon network founded?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "When is Hoge Kampen National Park opened?",
+   "before_structured": "other_tool_error",
+   "after_structured": "other_tool_error",
+   "before_legacy": "ok",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "When is OpenAI o3 released?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "When's Rhiannan Iffland's birthday?",
+   "before_structured": "quota_429",
+   "after_structured": "other_tool_error",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Where did Donald Trump completed his undergraduate studies?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Where did Kelsey Mann started his career?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Where did Thomas Remengesau Jr recieve his alma meter?",
+   "before_structured": "quota_429",
+   "after_structured": "other_tool_error",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Where is Moana 2 first premiered?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Where is her hometown?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Where is his birthdate?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Where is the record of the highest number of goals scored by a team in a UEFA European Championship set?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Where is the studio of Team Asobi located?",
+   "before_structured": "other_tool_error",
+   "after_structured": "ok",
+   "before_legacy": "ok",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Where was Xander Schauffele born?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Where was the record of the most ABBA song titles identified in one minute set?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which city was Lecoanet born in?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which company developed Lenacapavir?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which company is the largest non-government employer worldwide in 2024",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which company owns Kraft Heinz?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which company produces Rolls-Royce La Rose Noire Droptail?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which country holds the most triumphant titles in the Womens World Badminton Team Championships according to the Guinness World Records 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which country is Abdi Nageeye from?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which country was Max Verstrappen born?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which country were Lingala is primarily spoken?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which country's team set the record for the most Olympic Womens football titles won according to the Guinness World Records in 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which rainforest surrounds the Kaieteur National Park",
+   "before_structured": "other_tool_error",
+   "after_structured": "ok",
+   "before_legacy": "ok",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which team did Beye play for during 2009-2012?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which team did Luka Modri\u0107 serve during 2008-2012?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which team did Pepe serve during 2004-2007?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Which team did he serve for during 2019-2023?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who achieved the fastest time clocked at the IRONMAN World Championship 2024 among participants with amputated legs below and above knee?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who achieved the most wins of the League of Legends European Championships?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who founded Crystal Bridges Museum of American Art?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who holds the record for the highest number of World Rally Championship race entries by an individual?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is Bridgerton's director?",
+   "before_structured": "ok",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is CEO of Gilead Sciences?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is Kickstarter's new Chief Marketing Officer appointed in 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is his father?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the American player who holds the record of the lowest PGA Championship golf score in single round recorded in 2024?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the CEO of Berkshire Hathaway?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the Serbian player who holds the record of most consecutive years winning an ATP title turn pro?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the Swedish swimmer who achieved the most consecutive long course World Championship swimming gold medals in the same event?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the artist that painted L'empire des lumi\u00e8res",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the cat who achieved fastest 10 m on a skateboard, according to the 2024 Guinness World Records?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the current CEO of Rolls-Royce Motor Cars?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "quota_429",
+   "after_has_429": true,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the current chairman of Empoli?",
+   "before_structured": "quota_429",
+   "after_structured": "other_tool_error",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the current chairman of Tottenham Hotspur?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the current manager of Stade Rennais FC?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the current mayor of San Diego?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the current mayor of Shanghai?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the current president of Germany?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the current president of Porto?",
+   "before_structured": "quota_429",
+   "after_structured": "other_tool_error",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the current prime minister of Japan?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the current prime minister of Kuwait?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the current spouse of Frank-Walter Steinmeier?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the current spouse of Shigeru Ishiba?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the female player who won the most racquetball world championships, according to the 2024 Guinness World Records?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the losing nominee in the 2024 Palauan general election?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the lowest-ranked tennis player to win an ATP Tour title?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the most female high diving gold medals winner at the World Aquatics Championships according to the 2024 Guinness World Records?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the oldest goalscorer in the UEFA European Championships 2024?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the oldest male Grand Slam winner according to Guinness World Records 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the oldest player in the UEFA European Championships in 2024?",
+   "before_structured": "quota_429",
+   "after_structured": "other_tool_error",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the player who holds the most snooker ranking titles according to the Guinness World Records in 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the player who set the record of most freestyle football world titles won (male), according to the Guinness World Records in 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the player who won the most female Grand Slam wheelchair singles titles, according to the Guinness World Records in 2024.",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the player who won the most male Grand Slam wheelchair singles titles, according to the Guinness World Records in 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the president of Grand Valley State University?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the producer of Birds of a Feather?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the spouse of Daniel Levy?",
+   "before_structured": "quota_429",
+   "after_structured": "other_tool_error",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the spouse of Philomena V. Mantella?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who is the youngest player in the UEFA European Championships in 2024?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who scored the fastest goal in the UEFA European Championships 2024?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who won the most IJSBA World Championships according to Guinness World Records in 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who won the most Super Mario Kart World Championships according to the Guinness World Records in 2024?",
+   "before_structured": "tool_arg_error",
+   "after_structured": "tool_arg_error",
+   "before_legacy": "tool_arg_error",
+   "after_legacy": "tool_arg_error",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who's the current chairman of Adama City F.C.?",
+   "before_structured": "other_tool_error",
+   "after_structured": "ok",
+   "before_legacy": "ok",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who's the current head master of Worth School?",
+   "before_structured": "other_tool_error",
+   "after_structured": "ok",
+   "before_legacy": "ok",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  },
+  {
+   "question": "Who's the current president of FC Barcelona?",
+   "before_structured": "quota_429",
+   "after_structured": "ok",
+   "before_legacy": "quota_429",
+   "after_legacy": "ok",
+   "after_has_429": false,
+   "row_replaced": true
+  }
+ ]
+}

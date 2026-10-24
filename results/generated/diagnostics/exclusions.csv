@@ -1,0 +1,315 @@
+question,excluded,reason,flag_legacy,flag_structured,context_dependent,gold_in_context,correct
+What is the most expensive tea in the world?,False,,ok,ok,False,False,1.0
+Which country produces DaHong Pao?,False,,ok,ok,False,True,1.0
+Who is the richest billionaire in China?,False,,ok,ok,False,True,0.0
+Who is the performer of 2024 Super Bowl halftime show?,False,,ok,ok,False,True,1.0
+What is the birthplace of Usher?,False,,ok,ok,False,True,1.0
+Which is the NFL team based in Dallas?,False,,ok,ok,False,True,1.0
+How many games did Dallas Cowboy win in 2024?,False,,ok,ok,False,False,1.0
+Who won the 2024 Nobel Prize in Literature?,False,,ok,ok,False,False,0.0
+Where did Han Kang recieved her alma meter?,True,context_dependent,ok,ok,True,False,0.0
+Who is the current president of Yonsei University?,False,,ok,ok,False,True,1.0
+Who won Best Picture at the 2024 Academy Awards,False,,ok,ok,False,True,1.0
+Who is the director of Oppenheimer,False,,ok,ok,False,True,1.0
+Which university did Christopher Nolan go to?,False,,ok,ok,False,False,0.0
+What year was the school of fine art founded for University of College London?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Which novel won the 2024 Goodreads Choice Award for Fiction?,False,,ok,ok,False,True,1.0
+Who is the author of Wedding People?,False,,ok,ok,False,True,1.0
+What is the birthplace of Alison Espach?,False,,ok,ok,False,True,0.0
+What is the largest lake in Conneticut?,False,,ok,ok,False,True,1.0
+What is the city that received the most international tourists in 2024?,False,,ok,ok,False,True,0.0
+What is the tallest building in Bangkok?,False,,ok,ok,False,False,0.0
+How many floor does Magnolias Waterfront Residences have?,False,,ok,ok,False,False,1.0
+Who is the artist with the highest Spotify streams in 2024?,False,,ok,ok,False,True,1.0
+Which hospital was Taylor Swift born?,False,,ok,ok,False,True,1.0
+How many beds are in Reading hospital?,False,,ok,ok,False,False,0.0
+What is the model released in early 2025 by a Chinese company?,False,,ok,ok,False,True,1.0
+Who is the CEO of DeepSeek?,False,,ok,ok,False,True,1.0
+Where did Liang Wenfeng studied in undergraduate?,False,,ok,ok,False,True,1.0
+When is Zhejiang University founded?,False,,ok,ok,False,True,1.0
+Who won the 2024 Pulitzer Prize?,False,,ok,ok,False,True,0.0
+What was the first book of stories published by Jayne Anne Phillips?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is Kickstarter's new Chief Marketing Officer appointed in 2024?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What business school does Courtney Brown Warren attend?,False,,ok,ok,False,False,0.0
+Who is the eleventh dean of Harvard Business School?,False,,ok,ok,False,False,0.0
+Which country hosted the G7 summit in 2024?,False,,ok,ok,False,True,1.0
+What is the city with largest population in Italy?,False,,ok,ok,False,True,1.0
+What was the oldest building in Rome?,False,,ok,ok,False,True,1.0
+What was the Pantheon build?,False,,ok,ok,False,False,0.0
+Who is the most searched actor in 2024?,False,,ok,ok,False,False,0.0
+Where is Katt Williams born?,False,,ok,ok,False,False,1.0
+"What is the main airport in Cincinati, Ohio?",False,,ok,ok,False,True,1.0
+How many gates does Cincinnati/Northern Kentucky International Airport have?,False,,ok,ok,False,False,0.0
+Who is TIME's 2024 Person of the Year?,False,,ok,ok,False,True,1.0
+Where did Donald Trump completed his undergraduate studies?,True,tool_arg_error;context_dependent,tool_arg_error,tool_arg_error,True,False,1.0
+Who is the president of University of Pennsylvania?,False,,ok,ok,False,True,1.0
+Where did J. Larry Jameson completed his undergraduate studies?,False,,ok,ok,False,False,0.0
+What is the company that had the largest IPO in 2024?,False,,ok,ok,False,False,0.0
+What is the founding year of Lineage?,False,,ok,ok,False,False,0.0
+What is the team that won the 2024 UEFA Champions League?,False,,ok,ok,False,True,1.0
+What is the home stadium of Real Madrid?,False,,ok,ok,False,True,1.0
+When is Santiago Bernabéu Stadium inaurguarated?,False,,ok,ok,False,True,1.0
+What is the country with the highest GDP growth in 2024?,False,,ok,ok,False,True,0.0
+What is the largest waterfall in Guyana?,False,,ok,ok,False,True,1.0
+Which national park is Kaieteur Falls located,False,,ok,ok,False,True,1.0
+Which rainforest surrounds the Kaieteur National Park,False,,ok,ok,False,True,1.0
+What is the game that sold the most copies in the U.S. in 2024?,False,,ok,ok,False,True,1.0
+What is the official release date of call of duty black ops 6?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What is Netflix's most-watched new show in 2024 according to Forbes?,False,,ok,ok,False,False,0.0
+Who is Bridgerton's director?,False,,ok,ok,False,True,0.0
+What ABC drama did Tom Verica playered?,False,,ok,ok,False,True,1.0
+What is the first name of the character he played in how to get away with murder?,False,,ok,ok,False,False,0.0
+What is the S&P 500 company that achieved the highest revenue growth in 2024?,False,,ok,ok,False,False,0.0
+What is the headquarter location of Palantir technology?,False,,ok,ok,False,False,0.0
+What is the largest university in Denver?,False,,ok,ok,False,True,0.0
+What is the mascot of University of Colorado Denver,False,,ok,ok,False,True,0.0
+Which country won Eurovision 2024?,False,,ok,ok,False,True,1.0
+What is the most populus city in switzerland as of 2024?,False,,ok,ok,False,True,1.0
+When is the last time Zurich hold a cantonal election?,False,,ok,ok,False,True,1.0
+What is the largest university in the US in 2024 by land area in square miles?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is the president of Berry College?,False,,ok,ok,False,True,1.0
+How many children does Sandeep Mazumder have?,False,,ok,ok,False,False,0.0
+Which brand produces Crystal Light lemonade powder mix?,False,,ok,ok,False,False,1.0
+Which company owns Kraft Heinz?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is the CEO of Berkshire Hathaway?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is the driver who won the 2024 Formula 1 World Championship?,False,,ok,ok,False,False,1.0
+Which country was Max Verstrappen born?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What is the first national park established in Belgium?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+When is Hoge Kampen National Park opened?,False,,ok,other_tool_error,False,False,0.0
+What is the country that won the most medals in the 2024 Summer Olympicscountry that won the most medals in the 2024 Summer Olympics,False,,ok,ok,False,True,1.0
+Who is the president of United States in 2025?,False,,ok,ok,False,True,0.0
+Who is the first wife of Donald Trump?,False,,ok,ok,False,False,1.0
+What is the nationality of Ivana Marie Trump?,False,,ok,ok,False,True,1.0
+Who is the MLB player who led in home runs in 2024?,False,,ok,ok,False,True,0.0
+What year is Aaron Judge born?,False,,ok,ok,False,True,1.0
+What was the album that won Album of the Year at the 2024 Grammy Awards?the album that won Album of the Year at the 2024 Grammy Awards,False,,ok,ok,False,False,0.0
+When was Cowboy Carter released?,False,,ok,ok,False,False,0.0
+What is Billie Eilish's latest studio album released in 2024?,False,,ok,ok,False,True,1.0
+What is the second single of the album?,True,context_dependent,ok,ok,True,False,0.0
+Who is the producer of Birds of a Feather?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What is the AI model with highest performance in ARC-AGI benchmark as of January 2025?,False,,ok,ok,False,False,0.0
+What is the mini version of OpenAI o3?,False,,ok,ok,False,True,1.0
+When is OpenAI o3 released?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What is the country that launched the second highest amount of satellites in 2024?,False,,ok,ok,False,True,0.0
+Who is the current premier of China?,False,,ok,ok,False,True,1.0
+Who wrote the Times most influential article about Li Qiang in 2024?,False,,ok,ok,False,True,1.0
+What is the country that hosted the 2024 Summer Olympics?,False,,ok,ok,False,True,1.0
+Who is the mayor of Paris?,False,,ok,ok,False,True,0.0
+Which political party does Anne Hildago belongs to?,False,,ok,ok,False,True,1.0
+Who is the current party leader of the Socialist party?,False,,ok,ok,False,False,0.0
+What is the most expensive artwork sold at auction in 2024?,False,,ok,ok,False,False,0.0
+Who is the artist that painted L'empire des lumières,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What is the nationality of René Magritte,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is Forbes' youngest billionaire in 2024?,False,,ok,ok,False,False,0.0
+Which country is Livia Voigt from?,False,,ok,ok,False,True,1.0
+Which political party won the most recent municipal election?,False,,ok,ok,False,False,0.0
+Who is the president of the liberal party?,False,,ok,ok,False,False,0.0
+What team developed the game that won Game of the Year at the 2024 Game Awards?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Where is the studio of Team Asobi located?,False,,ok,ok,False,False,0.0
+Who is the current mayor of Tokyo?,False,,ok,ok,False,True,0.0
+Which company is the largest non-government employer worldwide in 2024,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Where is the headquarter of Walmart?,False,,ok,ok,False,True,1.0
+What is the largest musuem in Bentonville?,False,,ok,ok,False,True,1.0
+Who founded Crystal Bridges Museum of American Art?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,1.0
+Who is Hollywood's highest-paid actor of 2024?,False,,ok,ok,False,True,0.0
+What is the animated movie starring Dwayne Johnson in 2024?,False,,ok,ok,False,True,1.0
+Where is Moana 2 first premiered?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is the golfer who won the 2024 Masters Tournament have as of 2024?,False,,ok,ok,False,True,1.0
+How many children does Scottie Scheffler has?,False,,ok,ok,False,False,0.0
+What is the drug recognized as the breakthrough of the year in science in 2024?,False,,ok,ok,False,True,1.0
+Which company developed Lenacapavir?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is CEO of Gilead Sciences?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Where did Daniel O'Day go to college?,False,,ok,ok,False,False,0.0
+What is the best-selling electric vehicle in 2024,False,,ok,ok,False,True,0.0
+Who is the chief financial officer of Tesla?,False,,ok,ok,False,True,1.0
+Where did Vaibhav Taneja recieves his Bachelor degree?,True,context_dependent,ok,ok,True,True,1.0
+What is the world's fastest supercomputing system?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What is the operating system used by El Capitan,False,,ok,ok,False,True,0.0
+What is the highest-grossing movie of 2024,False,,ok,ok,False,True,1.0
+Who is the director of Inside Out 2?,False,,ok,ok,False,True,1.0
+Where did Kelsey Mann started his career?,True,tool_arg_error;context_dependent,tool_arg_error,tool_arg_error,True,False,0.0
+When is Cartoon network founded?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What is the city where the record of the most words on a postage stamp was set in 2024,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is the mayor of Mechelen?,False,,ok,ok,False,True,1.0
+Which university does Bart Somers go to?,False,,ok,empty_results,False,False,0.0
+Who is the winner of the world's largest marathon in 2024,False,,ok,ok,False,False,0.0
+Which country is Abdi Nageeye from?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is the president of netherland,False,,ok,ok,False,False,0.0
+When is Dick Schoof born?,False,,ok,ok,False,True,1.0
+What is the the country with the highest GDP in 2024,False,,ok,ok,False,True,1.0
+What professional basketball league governs most levels of basketball in USA,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Which team is the winner of 2024 NBA champion?,False,,ok,ok,False,True,1.0
+Who has the most points per game in Boston Celtics,False,,ok,ok,False,True,0.0
+What is movie that won Best Picture at the 2025 Academy Awards,False,,ok,ok,False,True,1.0
+What is the release date of Anora?,False,,ok,ok,False,True,1.0
+Which artist is 'not like us' targetting?,False,,ok,ok,False,True,0.0
+What is the nationality of Drake?,False,,ok,ok,False,True,1.0
+Who is the current mayor of the capital of Canada,False,,ok,ok,False,True,1.0
+Who is the current spouse of Mark Sutcliffe,False,,ok,ok,False,True,1.0
+What is the region where Yakut (Sakha) language is primarily spoken,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,1.0
+What is the current president of Sakha Republic?,False,,ok,ok,False,True,1.0
+What is Forbes most powerful women in 2024?,False,,ok,ok,False,False,0.0
+What is Ursula von der Leyen's polictal party?,False,,ok,ok,False,True,1.0
+What is the restaurant named world's best by CNN in 2024?,False,,ok,ok,False,False,0.0
+At which restaurant did the chefs at Disfutar met?,False,,ok,ok,False,True,1.0
+Which country were Lingala is primarily spoken?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What is the capital city of Democratic Republic of the Congo,False,,ok,ok,False,True,1.0
+Who is the current governor of Kinshasa,False,,ok,ok,False,True,1.0
+What is the artist whose track reached one billion Spotify streams fastest in 2024?,False,,ok,other_tool_error,False,False,0.0
+What is the record label of Bruno Mars?,False,,ok,ok,False,True,1.0
+Who won the 2024 Tour de France?,False,,ok,ok,False,True,1.0
+What is the birth place of Tadej Pogacar?,False,,ok,ok,False,True,0.0
+What's the airline which was ranked as the safest by AirlineRatings.com in 2024?,False,,ok,ok,False,True,1.0
+What's Air New Zealand's earnings before taxation for the 2024 financial year?,False,,ok,ok,False,True,1.0
+winner of the 2024 WTA Finals,False,,ok,ok,False,True,0.0
+Which city was Coco Gauff born?,False,,ok,ok,False,True,1.0
+Who is the current Mayor of Delray Beach?,False,,ok,ok,False,True,1.0
+Who is the founder of the university where Tom Carney got his bachelor's degree?,False,,ok,ok,False,False,0.0
+What's the smartphone brand that shipped the most units worldwide in the first three quarters of 2024?,False,,ok,ok,False,True,1.0
+What's Samsung's consolidated sales in the fourth quarter of 2024?,False,,ok,ok,False,True,1.0
+"What's the country where the largest building in the shape of a chicken is located, according to the 2024 Guinness World Records",True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who's the current president of Philippines?,False,,ok,ok,False,True,0.0
+Where did Bongbong Marcos graduate from for secondary school?,False,,ok,ok,False,True,1.0
+Who's the current head master of Worth School?,False,,ok,ok,False,True,1.0
+What's the team that holds the top spot for the most NBA Championship titles according to Guinness World Records in 2024?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who's the current head coach of Boston Celtics?,False,,ok,ok,False,True,1.0
+Where was Joe Mazzulla born?,False,,ok,ok,False,False,0.0
+"Who's the current mayor of Johnston, Rhode Island?",False,,ok,ok,False,True,0.0
+"What's the country that has earned the most World Womens Curling Championship titles, according to the 2024 Guinness World Records?",True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,1.0
+Who's the current prime minister of Canada?,False,,ok,ok,False,False,0.0
+What's Justin Trudeau's annual salary in 2024?,False,,ok,ok,False,False,0.0
+"Who is the cat who achieved fastest 10 m on a skateboard, according to the 2024 Guinness World Records?",True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+How old is Bao Zi?,False,,ok,ok,False,False,0.0
+Who achieved the most UFC title bout wins by November 2024?,False,,ok,ok,False,True,0.0
+Where is Jon Jones's hometown?,False,,ok,ok,False,True,1.0
+Who's the current mayor of Rochester?,False,,ok,ok,False,True,1.0
+Who's Malik Evans's current spouse?,False,,ok,ok,False,False,0.0
+What is the city where the largest robot championship recognized by the Guinness World Records in 2024 was held?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who's the mayor of Shanghai?,False,,ok,ok,False,True,0.0
+When is Gong Zheng's birthday?,False,,ok,ok,False,False,0.0
+Which country's team set the record for the most Olympic Womens football titles won according to the Guinness World Records in 2024?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who's the current head coach of USA's Olympic womens football team?,False,,ok,ok,False,True,1.0
+What's Emma Hayes's high school alma mater?,False,,ok,ok,False,False,0.0
+Who's the current headmistress?,False,,ok,ok,False,False,0.0
+Who is the player who holds the most snooker ranking titles according to the Guinness World Records in 2024?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+How many world championships has he won up to April 2025?,False,,ok,ok,False,False,0.0
+"What is the country where the record for the most books with different title names but the same author is set, according to the Guinness World Records in 2024?",True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who's the current prime minister of India?,False,,ok,ok,False,True,1.0
+What is the prize awarded in Russia in July 2024 to Modi?,False,,ok,ok,False,True,1.0
+Who is the Serbian player who holds the record of most consecutive years winning an ATP title turn pro?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is the current coach of Djokovic?,False,,ok,ok,False,True,0.0
+How many grand slams does Murray have?,False,,ok,ok,False,False,1.0
+"Who is the player who set the record of most freestyle football world titles won (male), according to the Guinness World Records in 2024?",True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What is the height of Erlend Fagerli?,False,,ok,ok,False,False,0.0
+Who is the oldest male Grand Slam winner according to Guinness World Records 2024?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Where is his hometown?,True,context_dependent,ok,ok,True,False,0.0
+What's Bangalore's cricket team?,False,,ok,ok,False,True,1.0
+Who is the current coach of Royal Challengers Bengaluru?,False,,ok,ok,False,True,1.0
+"What is the city where the largest display of origami dolphins was held, according to the Guinness World Records in 2024?",True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is London's current mayor?,False,,ok,ok,False,True,1.0
+Who is Khan's current spouse?,False,,ok,ok,False,False,0.0
+"What is the team that achieved the most wins in the Major League Soccer Cup, according to Guinness World Records?",True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is the current head coach of the team?,False,,ok,ok,False,False,0.0
+Where was Greg Vanney born?,False,,ok,ok,False,False,1.0
+Who is the current mayor of South Boston?,False,,ok,ok,False,True,0.0
+"Who is the player who won the most female Grand Slam wheelchair singles titles, according to the Guinness World Records in 2024.",True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Where is his hometown?,True,context_dependent,ok,ok,True,False,0.0
+Who is the current mayor of Woerden?,False,,ok,ok,False,True,0.0
+When will he retire?,True,context_dependent,ok,ok,True,False,0.0
+"What is team that holds the highest number of consecutive women's football national league titles ever achieved, according to the Guinness World Records",True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is the current chairman of SFK 2000 Sarajevo?,False,,ok,ok,False,True,0.0
+Where was Hurem born?,False,,ok,ok,False,False,0.0
+Who is the current mayor of Sarajevo?,False,,ok,ok,False,False,0.0
+Who is the Italian player who holds the record of the most football Ligue 1 titles won by a player?,False,,ok,ok,False,True,1.0
+Which team is he currently serving?,True,context_dependent,ok,ok,True,False,0.0
+Who is the current head coach of Al-Arabi,False,,ok,ok,False,False,0.0
+Where is the birth place of Pablo Amo?,False,,ok,ok,False,True,1.0
+What is the city where the largest whistling archery gathering recognized by the Guinness World Records in 2024 was held?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What is the area of Linzhi,False,,ok,ok,False,False,0.0
+"Who is the player who won the most male Grand Slam wheelchair singles titles, according to the Guinness World Records in 2024?",True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Where is his hometown?,True,context_dependent,ok,ok,True,False,0.0
+Who is the current governor of Tokyo?,False,,ok,ok,False,True,1.0
+Where was she born?,True,context_dependent,ok,ok,True,False,0.0
+Who is the lowest-ranked tennis player to win an ATP Tour title?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What is his birth place?,True,context_dependent,ok,ok,True,False,0.0
+Where was the record of the most ABBA song titles identified in one minute set?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is the representative of the Conservative party in UK?,False,,ok,ok,False,False,0.0
+How many votes did Rishi Sunak recieved?,False,,ok,ok,False,False,0.0
+What is the city where the record for the most consecutive female wheelchair singles titles as recognized by Guinness World Records in 2024?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is London's current mayor?,False,,ok,ok,False,True,1.0
+Who is Khan's current spouse?,False,,ok,ok,False,False,0.0
+Who was was the winner of the Paris 2024 women's marathon?,False,,ok,ok,False,True,1.0
+Where was she born?,True,context_dependent,ok,ok,True,False,0.0
+What's the name of the football team based in Adama,False,,ok,ok,False,True,1.0
+Who's the current chairman of Adama City F.C.?,False,,ok,ok,False,False,0.0
+What is the country that recorded five Olympic womens soccer gold medals according to the Guinness World Records in 2024?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is the current president of U.S.?,False,,ok,ok,False,True,0.0
+Which News TV network did Trump sue in 2024?,False,,ok,ok,False,True,0.0
+Who is the current president of ABC News or CBS News?,False,,ok,ok,False,False,0.0
+"Who is the female player who won the most racquetball world championships, according to the 2024 Guinness World Records?",True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What is the hometown of Paola_Longoria,False,,ok,ok,False,True,1.0
+Who is the current governor of the city?,True,context_dependent,ok,ok,True,False,0.0
+Which Brazilian player holds the record of the most football Ligue 1 titles won by a player?,False,,ok,ok,False,True,1.0
+How many league goals did the player score in 2023-2024 season?,False,,ok,ok,False,False,0.0
+Who set the record for the most consecutive Superbike Championship race wins in 2024?,False,,ok,ok,False,False,0.0
+When is his birthday?,True,context_dependent,ok,ok,True,False,0.0
+Where is the record of the highest number of goals scored by a team in a UEFA European Championship set?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Which movie won the top prize of the Berlin Movie Festival 2024?,False,,ok,ok,False,True,1.0
+Who wrote this film?,True,context_dependent,ok,ok,True,False,0.0
+Where was Diop born?,False,,ok,ok,False,False,0.0
+Who won the most IJSBA World Championships according to Guinness World Records in 2024?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+What is his nationality?,True,context_dependent,ok,ok,True,False,0.0
+Who is the current prime minister of Kuwait?,False,,ok,ok,False,True,0.0
+Who is the youngest player in the UEFA European Championships in 2024?,False,,ok,ok,False,True,1.0
+What's his current team?,True,context_dependent,ok,ok,True,False,0.0
+Who's the current president of FC Barcelona?,False,,ok,ok,False,True,1.0
+How many children does Joan Laporta have?,False,,ok,ok,False,False,0.0
+Which country holds the most triumphant titles in the Womens World Badminton Team Championships according to the Guinness World Records 2024?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,1.0
+What is China's most populated city in 2024?,False,,ok,ok,False,True,0.0
+Who is the current mayor of Shanghai?,False,,ok,ok,False,False,0.0
+Who achieved the most wins of the League of Legends European Championships?,False,,ok,ok,False,True,0.0
+What's the position of Caps?,False,,ok,ok,False,False,0.0
+Who is the oldest player in the UEFA European Championships in 2024?,False,,ok,other_tool_error,False,False,0.0
+Which team did Pepe serve during 2004-2007?,False,,ok,ok,False,True,1.0
+Who is the current president of Porto?,False,,ok,other_tool_error,False,False,0.0
+What is the height of André Villas-Boas?,False,,ok,ok,False,False,0.0
+Who won the most Super Mario Kart World Championships according to the Guinness World Records in 2024?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Which city was Lecoanet born in?,False,,ok,ok,False,False,0.0
+What is the football team based in Rennes?,False,,ok,ok,False,True,1.0
+Who is the current manager of Stade Rennais FC?,False,,ok,ok,False,False,0.0
+Which team did Beye play for during 2009-2012?,False,,ok,ok,False,True,1.0
+Who is the oldest goalscorer in the UEFA European Championships 2024?,False,,ok,ok,False,False,0.0
+Which team did Luka Modrić serve during 2008-2012?,False,,ok,ok,False,True,1.0
+Who is the current chairman of Tottenham Hotspur?,False,,ok,ok,False,True,0.0
+Who is the spouse of Daniel Levy?,False,,ok,other_tool_error,False,False,0.0
+Who holds the record for the highest number of World Rally Championship race entries by an individual?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is his father?,True,context_dependent,ok,ok,True,False,0.0
+Who is the losing nominee in the 2024 Palauan general election?,False,,ok,ok,False,True,0.0
+Where did Thomas Remengesau Jr recieve his alma meter?,False,,ok,other_tool_error,False,False,0.0
+Who is the president of Grand Valley State University?,False,,ok,ok,False,True,1.0
+Who is the spouse of Philomena V. Mantella?,False,,ok,ok,False,False,0.0
+Who is the most female high diving gold medals winner at the World Aquatics Championships according to the 2024 Guinness World Records?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+When's Rhiannan Iffland's birthday?,False,,ok,other_tool_error,False,False,0.0
+Who scored the fastest goal in the UEFA European Championships 2024?,False,,ok,ok,False,True,1.0
+Which team did he serve for during 2019-2023?,True,context_dependent,ok,ok,True,False,0.0
+Who is the current chairman of Empoli?,False,,ok,other_tool_error,False,False,0.0
+Where is his birthdate?,True,context_dependent,ok,ok,True,False,0.0
+Who is the American player who holds the record of the lowest PGA Championship golf score in single round recorded in 2024?,False,,ok,ok,False,True,1.0
+Where was Xander Schauffele born?,False,,ok,ok,False,True,0.0
+Who is the current mayor of San Diego?,False,,ok,ok,False,True,1.0
+What is the country where the maximum number of games is live streamed for a single sports championship in 2024?,False,,ok,ok,False,False,0.0
+Who is the current prime minister of Japan?,False,,ok,ok,False,True,0.0
+Who is the current spouse of Shigeru Ishiba?,False,,ok,ok,False,True,0.0
+What is the country that played the most matches in UEFA European Football Championships,False,,ok,ok,False,True,0.0
+Who is the current president of Germany?,False,,ok,ok,False,True,1.0
+Who is the current spouse of Frank-Walter Steinmeier?,False,,ok,ok,False,True,1.0
+What is the most expensive car in 2024?,False,,ok,ok,False,False,0.0
+Which company produces Rolls-Royce La Rose Noire Droptail?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is the current CEO of Rolls-Royce Motor Cars?,True,quota_429,quota_429,ok,False,True,1.0
+Who is the Swedish swimmer who achieved the most consecutive long course World Championship swimming gold medals in the same event?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Where is her hometown?,True,context_dependent,ok,ok,True,False,0.0
+Who achieved the fastest time clocked at the IRONMAN World Championship 2024 among participants with amputated legs below and above knee?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+How many days of driving in 2024 was banned for Billy Monger?,False,,ok,ok,False,False,1.0
+In what city was the record of the most words on a postage stamp set in 2024?,True,tool_arg_error,tool_arg_error,tool_arg_error,False,False,0.0
+Who is the mayor of Mechelen?,False,,ok,ok,False,True,1.0
+How many children does Somers currently have?,True,quota_429,quota_429,ok,False,False,0.0

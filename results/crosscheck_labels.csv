@@ -1,0 +1,51 @@
+id,claude_suggestion_1correct_0wrong_-1check,reason,YOUR_FINAL_verdict (change if you disagree)
+1,1,Names Samira Hurem as current president of the club (borderline: asked chairman),1
+2,0,Refuses; no answer,0
+3,0,No answer; mentions wrong person,0
+4,1,Samsung matches,1
+5,1,Matches,1
+6,1,Matches,1
+7,0,No answer,0
+8,0,No answer,0
+9,0,"Says Salvator Mundi, gold is L'empire des lumieres",0
+10,0,Describes a different person (Hurrem Sultan),0
+11,0,"Says Sabalenka, gold Coco Gauff",0
+12,0,"Says Atlanta, gold Delray Beach",0
+13,1,Matches,1
+14,1,Matches,1
+15,1,"Says India (core answer matches, extra details unverified)",1
+16,0,No answer,0
+17,1,Matches,1
+18,1,Matches,1
+19,0,No answer,0
+20,1,Matches,1
+21,0,No answer,0
+22,1,Matches,1
+23,-1,Answer cut off in sheet - check full answer,
+24,1,Matches,1
+25,0,No answer,0
+26,1,1992 matches,1
+27,0,No answer,0
+28,1,Matches,1
+29,0,Wrong album/single,0
+30,1,Matches,1
+31,1,Matches,1
+32,1,Gives Oct 18 2024 as theatrical release,1
+33,1,Matches,1
+34,0,"Says joint venture with 3G, gold Berkshire Hathaway",0
+35,0,No answer,0
+36,0,No answer,0
+37,-1,Answer cut off in sheet - check full answer,
+38,0,No answer,0
+39,0,No number given,0
+40,0,"Says Kemi Badenoch, gold Rishi Sunak (gold may be outdated)",0
+41,1,Matches,1
+42,0,No answer,0
+43,1,Matches,1
+44,1,China matches,1
+45,0,No answer,0
+46,0,No answer,0
+47,1,Matches,1
+48,0,No answer,0
+49,1,Matches,1
+50,0,"Describes her mother Ivana, not Ivana Marie; no nationality given",0

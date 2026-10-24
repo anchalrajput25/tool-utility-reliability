@@ -1,0 +1,36 @@
+{
+  "analysis": "text_only_baselines",
+  "runs": "runs",
+  "restricted_to_hidden": "results/generated/diagnostics/hidden.npz",
+  "n": 229,
+  "n_missing_in_runs": 0,
+  "n_missing_labels": 0,
+  "n_empty_snippet_span": 9,
+  "gold_unusable_short_tokens": 11,
+  "auroc": {
+    "utility": {
+      "prompt_length_chars": 0.6271,
+      "n_results": 0.5186,
+      "question_snippet_overlap": 0.5884,
+      "tfidf_logreg_nestedcv": 0.4998,
+      "tfidf_logreg_ci": [
+        0.4232,
+        0.5804
+      ],
+      "REFERENCE_ONLY_gold_in_snippets": 0.7324
+    },
+    "correct": {
+      "prompt_length_chars": 0.6222,
+      "n_results": 0.5246,
+      "question_snippet_overlap": 0.6006,
+      "tfidf_logreg_nestedcv": 0.5586,
+      "tfidf_logreg_ci": [
+        0.4828,
+        0.6292
+      ],
+      "REFERENCE_ONLY_gold_in_snippets": 0.781
+    }
+  },
+  "gold_in_snippets_rate": 0.6594,
+  "note": "Single features are scored directly (no fitting). The TF-IDF model uses the same outer folds (seed 42) as the probes. gold_in_snippets uses the gold answer and is a diagnostic reference, not a legitimate baseline. Compare against the POST probe AUROC on the same question set."
+}

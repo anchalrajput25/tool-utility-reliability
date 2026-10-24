@@ -1,0 +1,13 @@
+{
+ "source": "crosscheck_labels.csv + disagreement ids in judge_crosscheck.json",
+ "n_sampled": 50,
+ "n_labeled": 48,
+ "unresolved_ids": [
+  23,
+  37
+ ],
+ "final_equals_model_suggestion_all": true,
+ "agreement": 0.917,
+ "cohen_kappa": 0.832,
+ "caveat": "judge labels are reconstructed from the disagreement list; the per-id judge verdicts were not saved separately"
+}

@@ -1,0 +1,506 @@
+{
+ "clean229.json": [
+  {
+   "key": "accuracy_by_kind.tool_ok",
+   "reported": 0.468,
+   "regenerated": 0.468,
+   "status": "match"
+  },
+  {
+   "key": "accuracy_by_kind.tool_arg_error",
+   "reported": 0.083,
+   "regenerated": 0.083,
+   "status": "match"
+  },
+  {
+   "key": "accuracy_by_kind.pronoun_questions",
+   "reported": 0.091,
+   "regenerated_key": "accuracy_by_kind.pronoun_questions",
+   "status": "not_regenerable"
+  },
+  {
+   "key": "accuracy_by_kind.clean_standalone",
+   "reported": 0.504,
+   "regenerated": 0.504,
+   "status": "match"
+  },
+  {
+   "key": "time_sensitivity_test.current_latest",
+   "reported": 0.41,
+   "status": "not_regenerable"
+  },
+  {
+   "key": "time_sensitivity_test.fixed_year",
+   "reported": 0.37,
+   "status": "not_regenerable"
+  },
+  {
+   "key": "time_sensitivity_test.stable",
+   "reported": 0.41,
+   "status": "not_regenerable"
+  },
+  {
+   "key": "gold_in_search_context.rate",
+   "reported": 0.47,
+   "regenerated": 0.471,
+   "status": "match"
+  },
+  {
+   "key": "gold_in_search_context.acc_if_present",
+   "reported": 0.74,
+   "regenerated_key": "gold_in_search_context.acc_if_present",
+   "status": "not_regenerable"
+  },
+  {
+   "key": "gold_in_search_context.acc_if_absent",
+   "reported": 0.09,
+   "regenerated_key": "gold_in_search_context.acc_if_absent",
+   "status": "not_regenerable"
+  },
+  {
+   "key": "clean229.accuracy.no_tool",
+   "reported": 0.118,
+   "regenerated": 0.118,
+   "status": "match"
+  },
+  {
+   "key": "clean229.accuracy.force_google",
+   "reported": 0.502,
+   "regenerated": 0.502,
+   "status": "match"
+  },
+  {
+   "key": "clean229.utility_kappa",
+   "reported": 0.97,
+   "regenerated": 0.97,
+   "status": "match"
+  },
+  {
+   "key": "clean229.kappa_ci[0]",
+   "reported": 0.941,
+   "regenerated": 0.941,
+   "status": "match"
+  },
+  {
+   "key": "clean229.kappa_ci[1]",
+   "reported": 0.994,
+   "regenerated": 0.994,
+   "status": "match"
+  },
+  {
+   "key": "clean229.agreement_reference",
+   "reported": 0.992,
+   "regenerated": 0.992,
+   "status": "match"
+  },
+  {
+   "key": "clean229.LNE",
+   "reported": 0.904,
+   "regenerated": 0.904,
+   "status": "match"
+  },
+  {
+   "key": "clean229.q2.pre",
+   "reported": 0.598,
+   "regenerated": 0.598,
+   "status": "match"
+  },
+  {
+   "key": "clean229.q2.post",
+   "reported": 0.746,
+   "regenerated": 0.746,
+   "status": "match"
+  },
+  {
+   "key": "clean229.q2.diff",
+   "reported": 0.148,
+   "regenerated": 0.148,
+   "status": "match"
+  },
+  {
+   "key": "clean229.q2.ci[0]",
+   "reported": 0.056,
+   "regenerated": 0.056,
+   "status": "match"
+  },
+  {
+   "key": "clean229.q2.ci[1]",
+   "reported": 0.239,
+   "regenerated": 0.239,
+   "status": "match"
+  },
+  {
+   "key": "clean229.q2.gap_closure_vs_reference",
+   "reported": 0.375,
+   "regenerated": 0.375,
+   "status": "match"
+  }
+ ],
+ "full314_final.json": [
+  {
+   "key": "accuracy.no_tool",
+   "reported": 0.117,
+   "regenerated": 0.117,
+   "status": "match"
+  },
+  {
+   "key": "accuracy.force_google",
+   "reported": 0.396,
+   "regenerated": 0.396,
+   "status": "match"
+  },
+  {
+   "key": "paper.no_tool",
+   "reported": 0.17,
+   "regenerated": 0.17,
+   "status": "match"
+  },
+  {
+   "key": "paper.always_tool",
+   "reported": 0.65,
+   "regenerated": 0.65,
+   "status": "match"
+  },
+  {
+   "key": "paper.LNE",
+   "reported": 0.812,
+   "regenerated": 0.812,
+   "status": "match"
+  },
+  {
+   "key": "paper.LUE_x",
+   "reported": 0.723,
+   "regenerated": 0.723,
+   "status": "match"
+  },
+  {
+   "key": "need.n",
+   "reported": 308,
+   "regenerated": 308,
+   "status": "match"
+  },
+  {
+   "key": "need.pos_rate",
+   "reported": 0.881,
+   "regenerated": 0.881,
+   "status": "match"
+  },
+  {
+   "key": "need.flip",
+   "reported": 0.013,
+   "regenerated": 0.013,
+   "status": "match"
+  },
+  {
+   "key": "need.flip_ci[0]",
+   "reported": 0.003,
+   "regenerated": 0.003,
+   "status": "match"
+  },
+  {
+   "key": "need.flip_ci[1]",
+   "reported": 0.026,
+   "regenerated": 0.026,
+   "status": "match"
+  },
+  {
+   "key": "need.kappa",
+   "reported": 0.959,
+   "regenerated": 0.959,
+   "status": "match"
+  },
+  {
+   "key": "need.kappa_ci[0]",
+   "reported": 0.91,
+   "regenerated": 0.91,
+   "status": "match"
+  },
+  {
+   "key": "need.kappa_ci[1]",
+   "reported": 0.991,
+   "regenerated": 0.991,
+   "status": "match"
+  },
+  {
+   "key": "need.ceiling",
+   "reported": 0.986,
+   "regenerated": 0.986,
+   "status": "match"
+  },
+  {
+   "key": "utility.n",
+   "reported": 308,
+   "regenerated": 308,
+   "status": "match"
+  },
+  {
+   "key": "utility.pos_rate",
+   "reported": 0.317,
+   "regenerated": 0.317,
+   "status": "match"
+  },
+  {
+   "key": "utility.flip",
+   "reported": 0.029,
+   "regenerated": 0.029,
+   "status": "match"
+  },
+  {
+   "key": "utility.flip_ci[0]",
+   "reported": 0.013,
+   "regenerated": 0.013,
+   "status": "match"
+  },
+  {
+   "key": "utility.flip_ci[1]",
+   "reported": 0.049,
+   "regenerated": 0.049,
+   "status": "match"
+  },
+  {
+   "key": "utility.kappa",
+   "reported": 0.955,
+   "regenerated": 0.955,
+   "status": "match"
+  },
+  {
+   "key": "utility.kappa_ci[0]",
+   "reported": 0.924,
+   "regenerated": 0.924,
+   "status": "match"
+  },
+  {
+   "key": "utility.kappa_ci[1]",
+   "reported": 0.98,
+   "regenerated": 0.98,
+   "status": "match"
+  },
+  {
+   "key": "utility.ceiling",
+   "reported": 0.986,
+   "regenerated": 0.986,
+   "status": "match"
+  },
+  {
+   "key": "utility.ceiling_ci[0]",
+   "reported": 0.976,
+   "regenerated": 0.976,
+   "status": "match"
+  },
+  {
+   "key": "utility.ceiling_ci[1]",
+   "reported": 0.994,
+   "regenerated": 0.994,
+   "status": "match"
+  },
+  {
+   "key": "LNE_auroc",
+   "reported": 0.914,
+   "regenerated": 0.914,
+   "status": "match"
+  },
+  {
+   "key": "q2_single_run.pre",
+   "reported": 0.681,
+   "regenerated": 0.681,
+   "status": "match"
+  },
+  {
+   "key": "q2_single_run.post",
+   "reported": 0.824,
+   "regenerated": 0.824,
+   "status": "match"
+  },
+  {
+   "key": "q2_single_run.diff",
+   "reported": 0.142,
+   "regenerated": 0.142,
+   "status": "match"
+  },
+  {
+   "key": "q2_single_run.ci[0]",
+   "reported": 0.071,
+   "regenerated": 0.071,
+   "status": "match"
+  },
+  {
+   "key": "q2_single_run.ci[1]",
+   "reported": 0.215,
+   "regenerated": 0.215,
+   "status": "match"
+  },
+  {
+   "key": "q2_single_run.gap_closure",
+   "reported": 0.466,
+   "regenerated": 0.466,
+   "status": "match"
+  },
+  {
+   "key": "q2_majority.pre",
+   "reported": 0.654,
+   "regenerated": 0.654,
+   "status": "match"
+  },
+  {
+   "key": "q2_majority.post",
+   "reported": 0.823,
+   "regenerated": 0.823,
+   "status": "match"
+  },
+  {
+   "key": "q2_majority.diff",
+   "reported": 0.169,
+   "regenerated": 0.169,
+   "status": "match"
+  },
+  {
+   "key": "q2_majority.ci[0]",
+   "reported": 0.097,
+   "regenerated": 0.097,
+   "status": "match"
+  },
+  {
+   "key": "q2_majority.ci[1]",
+   "reported": 0.24,
+   "regenerated": 0.24,
+   "status": "match"
+  },
+  {
+   "key": "q2_majority.gap_closure",
+   "reported": 0.51,
+   "regenerated": 0.51,
+   "status": "match"
+  },
+  {
+   "key": "budgets.0.2.pre",
+   "reported": 0.081,
+   "regenerated": 0.081,
+   "status": "match"
+  },
+  {
+   "key": "budgets.0.2.post",
+   "reported": 0.124,
+   "regenerated": 0.124,
+   "status": "match"
+  },
+  {
+   "key": "budgets.0.2.LNE",
+   "reported": 0.073,
+   "regenerated": 0.073,
+   "status": "match"
+  },
+  {
+   "key": "budgets.0.2.oracle",
+   "reported": 0.201,
+   "regenerated": 0.201,
+   "status": "match"
+  },
+  {
+   "key": "budgets.0.4.pre",
+   "reported": 0.17,
+   "regenerated": 0.17,
+   "status": "match"
+  },
+  {
+   "key": "budgets.0.4.post",
+   "reported": 0.223,
+   "regenerated": 0.223,
+   "status": "match"
+  },
+  {
+   "key": "budgets.0.4.LNE",
+   "reported": 0.133,
+   "regenerated": 0.133,
+   "status": "match"
+  },
+  {
+   "key": "budgets.0.4.oracle",
+   "reported": 0.317,
+   "regenerated": 0.317,
+   "status": "match"
+  },
+  {
+   "key": "budgets.0.8.pre",
+   "reported": 0.271,
+   "regenerated": 0.271,
+   "status": "match"
+  },
+  {
+   "key": "budgets.0.8.post",
+   "reported": 0.282,
+   "regenerated": 0.282,
+   "status": "match"
+  },
+  {
+   "key": "budgets.0.8.LNE",
+   "reported": 0.252,
+   "regenerated": 0.252,
+   "status": "match"
+  },
+  {
+   "key": "budgets.0.8.oracle",
+   "reported": 0.317,
+   "regenerated": 0.317,
+   "status": "match"
+  }
+ ],
+ "not_regenerable_files": {
+  "full314_valid194.json": "earlier run whose 114 quota-failed searches were later re-run; raw files superseded",
+  "pilot50_base_harness.json": "50-question pilot; regenerate only if its run folder was kept"
+ },
+ "judge_crosscheck.json": [
+  {
+   "key": "n_sampled",
+   "reported": 50,
+   "regenerated": 50,
+   "status": "match"
+  },
+  {
+   "key": "n_labeled",
+   "reported": 48,
+   "regenerated": 48,
+   "status": "match"
+  },
+  {
+   "key": "unresolved_ids[0]",
+   "reported": 23,
+   "regenerated": 23,
+   "status": "match"
+  },
+  {
+   "key": "unresolved_ids[1]",
+   "reported": 37,
+   "regenerated": 37,
+   "status": "match"
+  },
+  {
+   "key": "agreement",
+   "reported": 0.917,
+   "regenerated": 0.917,
+   "status": "match"
+  },
+  {
+   "key": "cohen_kappa",
+   "reported": 0.83,
+   "regenerated": 0.832,
+   "status": "match"
+  },
+  {
+   "key": "judge_false_negative",
+   "reported": 3,
+   "regenerated_key": "judge_false_negative",
+   "status": "not_regenerable"
+  },
+  {
+   "key": "judge_false_positive",
+   "reported": 1,
+   "regenerated_key": "judge_false_positive",
+   "status": "not_regenerable"
+  }
+ ],
+ "summary": {
+  "match": 74,
+  "MISMATCH": 0,
+  "not_regenerable": 8
+ }
+}

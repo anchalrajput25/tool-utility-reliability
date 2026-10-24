@@ -1,0 +1,109 @@
+{
+  "flagger": "legacy",
+  "flag_counts_legacy": {
+    "ok": 252,
+    "tool_arg_error": 60,
+    "quota_429": 2
+  },
+  "flag_counts_structured": {
+    "ok": 245,
+    "tool_arg_error": 60,
+    "other_tool_error": 8,
+    "empty_results": 1
+  },
+  "flag_disagreements": [
+    {
+      "question": "When is Hoge Kampen National Park opened?",
+      "flag_legacy": "ok",
+      "flag_structured": "other_tool_error"
+    },
+    {
+      "question": "Which university does Bart Somers go to?",
+      "flag_legacy": "ok",
+      "flag_structured": "empty_results"
+    },
+    {
+      "question": "What is the artist whose track reached one billion Spotify streams fastest in 2024?",
+      "flag_legacy": "ok",
+      "flag_structured": "other_tool_error"
+    },
+    {
+      "question": "Who is the oldest player in the UEFA European Championships in 2024?",
+      "flag_legacy": "ok",
+      "flag_structured": "other_tool_error"
+    },
+    {
+      "question": "Who is the current president of Porto?",
+      "flag_legacy": "ok",
+      "flag_structured": "other_tool_error"
+    },
+    {
+      "question": "Who is the spouse of Daniel Levy?",
+      "flag_legacy": "ok",
+      "flag_structured": "other_tool_error"
+    },
+    {
+      "question": "Where did Thomas Remengesau Jr recieve his alma meter?",
+      "flag_legacy": "ok",
+      "flag_structured": "other_tool_error"
+    },
+    {
+      "question": "When's Rhiannan Iffland's birthday?",
+      "flag_legacy": "ok",
+      "flag_structured": "other_tool_error"
+    },
+    {
+      "question": "Who is the current chairman of Empoli?",
+      "flag_legacy": "ok",
+      "flag_structured": "other_tool_error"
+    },
+    {
+      "question": "Who is the current CEO of Rolls-Royce Motor Cars?",
+      "flag_legacy": "quota_429",
+      "flag_structured": "ok"
+    },
+    {
+      "question": "How many children does Somers currently have?",
+      "flag_legacy": "quota_429",
+      "flag_structured": "ok"
+    }
+  ],
+  "accuracy_by_flag": {
+    "ok": {
+      "mean": 0.468,
+      "count": 252
+    },
+    "quota_429": {
+      "mean": 0.5,
+      "count": 2
+    },
+    "tool_arg_error": {
+      "mean": 0.083,
+      "count": 60
+    }
+  },
+  "context_dependent": {
+    "false": {
+      "mean": 0.418,
+      "count": 292
+    },
+    "true": {
+      "mean": 0.091,
+      "count": 22
+    }
+  },
+  "gold_in_context_rate": 0.471,
+  "accuracy_by_gold_in_context": {
+    "false": {
+      "mean": 0.09,
+      "count": 166
+    },
+    "true": {
+      "mean": 0.736,
+      "count": 148
+    }
+  },
+  "clean_n": 232,
+  "clean_accuracy": 0.504,
+  "clean_with_hidden": 229
+}

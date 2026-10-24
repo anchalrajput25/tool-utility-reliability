@@ -1,0 +1,57 @@
+{
+  "analysis": "paper_style_fold_aggregation",
+  "hidden": "data/hidden.npz",
+  "n": 308,
+  "positive_rate": {
+    "need": 0.8831,
+    "correct": 0.3961,
+    "utility": 0.3182
+  },
+  "paper_table4_llama32_3b_bfcl_mean_sd": {
+    "LNE": [
+      0.812,
+      0.039
+    ],
+    "LUE_x": [
+      0.723,
+      0.024
+    ],
+    "LUE_x_dF": [
+      0.68,
+      0.066
+    ]
+  },
+  "LNE_need_from_PRE": {
+    "pooled_oof_auroc": 0.9142,
+    "fold_mean_auroc": 0.9254,
+    "fold_sd_auroc": 0.0327,
+    "per_fold": [
+      0.9143,
+      0.9013,
+      0.9329,
+      0.9788,
+      0.8995
+    ],
+    "pooled_ci": [
+      0.8717,
+      0.9518
+    ]
+  },
+  "LUE_x_utility_from_PRE": {
+    "pooled_oof_auroc": 0.6815,
+    "fold_mean_auroc": 0.6892,
+    "fold_sd_auroc": 0.07,
+    "per_fold": [
+      0.7952,
+      0.6452,
+      0.6774,
+      0.7143,
+      0.614
+    ],
+    "pooled_ci": [
+      0.6207,
+      0.7417
+    ]
+  },
+  "note": "The paper reports mean +/- SD of per-fold AUROC over 5 stratified folds on all 314 questions, GPT-4o judge, chat-template harness. Our report used pooled out-of-fold AUROC. Differences that remain after matching aggregation come from labels, judge, harness, n, or randomness."
+}

@@ -90,3 +90,12 @@ python src/diagnostics.py --runs <chat_runs_dir> \
 - No leakage: out-of-fold predictions only; the mismatch swap never touches labels.
 - Report n and exclusions every time (the helpers print them).
 - A truncated/`-1` cross-check answer is excluded, never assigned a verdict.
+
+## Remediation analyses (added 24 Oct 2026)
+`src/remediation.py` adds four CPU analyses on the same files: `stratify`
+(utility = correctness x need, so PRE vs POST is compared inside need = 1, plus a
+need x correctness product baseline), `textonly` (length, overlap, TF-IDF
+logistic regression on the same snippets), `seeds` (10 seeds + label
+permutation) and `foldmean` (the paper's fold mean +/- SD). Commands, inputs and
+pass/fail criteria are in `docs/REMEDIATION_PLAN.md`. `src/make_results.py`
+regenerates every `results/*.json` from raw data and reports mismatches.

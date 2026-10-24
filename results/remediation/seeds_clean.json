@@ -1,0 +1,101 @@
+{
+  "analysis": "multi_seed_and_permutation",
+  "hidden": "results/generated/diagnostics/hidden.npz",
+  "n": 229,
+  "grid": "paper",
+  "per_seed": [
+    {
+      "seed": 0,
+      "pre": 0.6183,
+      "post": 0.7511,
+      "diff": 0.1328
+    },
+    {
+      "seed": 1,
+      "pre": 0.6203,
+      "post": 0.7529,
+      "diff": 0.1327
+    },
+    {
+      "seed": 2,
+      "pre": 0.5688,
+      "post": 0.7426,
+      "diff": 0.1739
+    },
+    {
+      "seed": 3,
+      "pre": 0.6493,
+      "post": 0.7547,
+      "diff": 0.1054
+    },
+    {
+      "seed": 4,
+      "pre": 0.6337,
+      "post": 0.7726,
+      "diff": 0.1389
+    },
+    {
+      "seed": 5,
+      "pre": 0.5798,
+      "post": 0.7671,
+      "diff": 0.1873
+    },
+    {
+      "seed": 6,
+      "pre": 0.5994,
+      "post": 0.7684,
+      "diff": 0.169
+    },
+    {
+      "seed": 7,
+      "pre": 0.6107,
+      "post": 0.7917,
+      "diff": 0.181
+    },
+    {
+      "seed": 8,
+      "pre": 0.6368,
+      "post": 0.7476,
+      "diff": 0.1108
+    },
+    {
+      "seed": 9,
+      "pre": 0.6069,
+      "post": 0.774,
+      "diff": 0.1671
+    }
+  ],
+  "diff_mean": 0.1499,
+  "diff_sd": 0.0295,
+  "diff_min": 0.1054,
+  "diff_max": 0.1873,
+  "frac_seeds_diff_gt_0": 1.0,
+  "permutation_POST_auroc": {
+    "n_perm": 20,
+    "mean": 0.4945,
+    "p95": 0.5471,
+    "values": [
+      0.4249,
+      0.4815,
+      0.4734,
+      0.5273,
+      0.4906,
+      0.5076,
+      0.4889,
+      0.4832,
+      0.5106,
+      0.5359,
+      0.4657,
+      0.4571,
+      0.479,
+      0.4891,
+      0.5468,
+      0.4547,
+      0.5414,
+      0.4956,
+      0.552,
+      0.484
+    ],
+    "note": "labels shuffled; fast grid for cost; should centre on 0.5"
+  }
+}

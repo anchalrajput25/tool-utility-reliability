@@ -11,7 +11,7 @@ from __future__ import annotations
 import argparse, json
 from pathlib import Path
 from io_utils import load_jsonl, load_ground_truth, question_of
-from free_judge import _JUDGE_SYSTEM, _SCHEMA_HINT, _parse
+from free_judge import _JUDGE_SYSTEM, _SCHEMA_HINT, _parse, parse_ok
 
 CONDITIONS = ["no_tool", "force_google", "force_brave"]
 
@@ -30,7 +30,9 @@ def load_model(name: str):
     return tok, model
 
 
-def judge_batch(tok, model, items, temperature, seed, batch_size=16):
+def judge_batch(tok, model, items, temperature, seed, batch_size=16, max_new_tokens=80):
+    """Returns (scores, raw_texts). raw_texts are kept so parse failures can be
+    counted later (src/judge_audit.py); scoring is unchanged."""
     import torch
     torch.manual_seed(seed)
     prompts = [tok.apply_chat_template(
@@ -42,12 +44,12 @@ def judge_batch(tok, model, items, temperature, seed, batch_size=16):
         enc = tok(prompts[i:i + batch_size], return_tensors="pt", padding=True,
                   truncation=True, max_length=3072).to(model.device)
         with torch.no_grad():
-            gen = model.generate(**enc, max_new_tokens=80, do_sample=temperature > 0,
+            gen = model.generate(**enc, max_new_tokens=max_new_tokens, do_sample=temperature > 0,
                                  temperature=temperature if temperature > 0 else None,
                                  top_p=1.0, pad_token_id=tok.pad_token_id)
         texts = tok.batch_decode(gen[:, enc["input_ids"].shape[1]:], skip_special_tokens=True)
-        out += [_parse(t) for t in texts]
-    return out
+        out += [(_parse(t), t) for t in texts]
+    return [s for s, _ in out], [t for _, t in out]
 
 
 def main():
@@ -58,6 +60,8 @@ def main():
     ap.add_argument("--model", default="Qwen/Qwen2.5-7B-Instruct")
     ap.add_argument("--temperature", type=float, default=1.0)
     ap.add_argument("--out", default="data/judgments.jsonl")
+    ap.add_argument("--max-new-tokens", type=int, default=80,
+                    help="80 reproduces the reported run; raise (e.g. 256) only into a NEW --out file")
     a = ap.parse_args()
 
     gt = load_ground_truth(a.gt)
@@ -78,10 +82,13 @@ def main():
                 if not todo:
                     continue
                 items = [(question_of(r), gt[question_of(r)], r["response"]) for r in todo]
-                scores = judge_batch(tok, model, items, a.temperature, seed=1000 + rep)
-                for r, s in zip(todo, scores):
+                scores, raws = judge_batch(tok, model, items, a.temperature, seed=1000 + rep,
+                                           max_new_tokens=a.max_new_tokens)
+                for r, s, raw in zip(todo, scores, raws):
                     f.write(json.dumps({"condition": cond, "question": question_of(r), "rep": rep,
-                                        "judge_model": a.model, "score": s}) + "\n")
+                                        "judge_model": a.model, "score": s, "raw": raw,
+                                        "parse_ok": parse_ok(raw),
+                                        "max_new_tokens": a.max_new_tokens}) + "\n")
                 f.flush()
                 print(f"{cond} rep {rep}: judged {len(todo)}")
     print(f"judgments cached in {out}")

@@ -1,0 +1,113 @@
+{
+ "determinism": null,
+ "n_rows_force_google": 314,
+ "n_unique_questions_judged": 308,
+ "accuracy": {
+  "no_tool": 0.117,
+  "force_google": 0.396
+ },
+ "paper": {
+  "no_tool": 0.17,
+  "always_tool": 0.65,
+  "LNE": 0.812,
+  "LUE_x": 0.723
+ },
+ "need": {
+  "n": 308,
+  "pos_rate": 0.881,
+  "flip": 0.013,
+  "flip_ci": [
+   0.003,
+   0.026
+  ],
+  "kappa": 0.959,
+  "kappa_ci": [
+   0.91,
+   0.991
+  ],
+  "ceiling": 0.986,
+  "ceiling_ci": [
+   0.968,
+   0.999
+  ]
+ },
+ "utility": {
+  "n": 308,
+  "pos_rate": 0.317,
+  "flip": 0.029,
+  "flip_ci": [
+   0.013,
+   0.049
+  ],
+  "kappa": 0.955,
+  "kappa_ci": [
+   0.924,
+   0.98
+  ],
+  "ceiling": 0.986,
+  "ceiling_ci": [
+   0.976,
+   0.994
+  ]
+ },
+ "LNE_auroc": 0.914,
+ "q2_single_run": {
+  "pre": 0.681,
+  "pre_ci": [
+   0.6207,
+   0.7417
+  ],
+  "post": 0.824,
+  "post_ci": [
+   0.7771,
+   0.8677
+  ],
+  "diff": 0.142,
+  "ci": [
+   0.071,
+   0.215
+  ],
+  "significant": true,
+  "gap_closure": 0.466
+ },
+ "q2_majority": {
+  "pre": 0.654,
+  "pre_ci": [
+   0.5873,
+   0.7182
+  ],
+  "post": 0.823,
+  "post_ci": [
+   0.7778,
+   0.8674
+  ],
+  "diff": 0.169,
+  "ci": [
+   0.097,
+   0.24
+  ],
+  "significant": true,
+  "gap_closure": 0.51
+ },
+ "budgets": {
+  "0.2": {
+   "pre": 0.081,
+   "post": 0.124,
+   "LNE": 0.073,
+   "oracle": 0.201
+  },
+  "0.4": {
+   "pre": 0.17,
+   "post": 0.223,
+   "LNE": 0.133,
+   "oracle": 0.317
+  },
+  "0.8": {
+   "pre": 0.271,
+   "post": 0.282,
+   "LNE": 0.252,
+   "oracle": 0.317
+  }
+ },
+ "n_with_hidden": 308
+}

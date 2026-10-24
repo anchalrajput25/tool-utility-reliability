@@ -3,3 +3,4 @@ runs/
 data/
 *.npz
 .env
+runs_*/
