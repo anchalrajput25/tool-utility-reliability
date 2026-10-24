@@ -1,34 +1,16 @@
 {
- "method": "Independent second-model cross-check (Claude), NOT human. 50 answers: 20 judged-correct + 20 judged-wrong Google answers + 10 no-tool, random seed 1; labeled blind to judge verdicts.",
- "agreement": 0.9,
- "cohen_kappa": 0.799,
+ "method": "Independent second-model cross-check (Claude), NOT human. Sampled 50 answers (20 judged-correct + 20 judged-wrong Google + 10 no-tool, seed 1), labeled blind to the judge. 2 answers (ids 23, 37) were truncated in logging and could not be labeled; metrics are computed on the 48 labeled answers.",
+ "n_sampled": 50,
+ "n_labeled": 48,
+ "unresolved_ids": [23, 37],
+ "agreement": 0.917,
+ "cohen_kappa": 0.83,
  "disagreements": [
-  {
-   "id": 1,
-   "claude": 1,
-   "qwen_judge": 0
-  },
-  {
-   "id": 15,
-   "claude": 1,
-   "qwen_judge": 0
-  },
-  {
-   "id": 23,
-   "claude": 1,
-   "qwen_judge": 0
-  },
-  {
-   "id": 26,
-   "claude": 1,
-   "qwen_judge": 0
-  },
-  {
-   "id": 50,
-   "claude": 0,
-   "qwen_judge": 1
-  }
+  {"id": 1, "claude": 1, "qwen_judge": 0},
+  {"id": 15, "claude": 1, "qwen_judge": 0},
+  {"id": 26, "claude": 1, "qwen_judge": 0},
+  {"id": 50, "claude": 0, "qwen_judge": 1}
  ],
- "judge_false_positive": 1,
- "judge_false_negative": 4
+ "judge_false_negative": 3,
+ "judge_false_positive": 1
 }
